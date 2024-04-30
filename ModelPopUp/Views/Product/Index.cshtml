@@ -1,0 +1,28 @@
+﻿@model ModelPopUp.Models.DBEntities.Product;
+@{
+	ViewData["Title"] = "Product List";
+}
+<h3>@ViewData["Title"]</h3>
+<hr />
+<div>
+	<button class="btn btn-primary mb-2"id="btnAdd">Add product</button>
+</div>
+<div class="container">
+	<table class="table table-success table-striped table-responsive table-hover">
+		<thead>
+			<tr>
+			<th>Id</th>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Qty</th>
+			<th>Action</th> 
+			</tr>
+		</thead>
+		<tbody id="tblBody">
+
+		</tbody>
+	</table>
+</div>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/ProductJS.js"></script>
